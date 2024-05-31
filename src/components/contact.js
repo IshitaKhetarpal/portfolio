@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 import "animate.css/animate.min.css";
-import { wait } from "@testing-library/react";
 
 function Contact() {
   return (
