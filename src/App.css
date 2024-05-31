@@ -1,0 +1,201 @@
+body {
+  background-image: url("imgs/back7.jpg");
+  background-size: auto;
+  color: white;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  top: 0;
+}
+
+/* needed for links on navbar */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* style navbar; add thin border on bottom */
+nav {
+  background: none;
+  text-align: right;
+  overflow: hidden;
+  
+}
+
+.navStyle {
+  color: white;
+  float: right;
+  text-align: center;
+  padding: 22px 24px;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+/* chnage colour and font size when hovering over navbar to indicate that text links to element */
+.navStyle :hover {
+  font-size: 19px;
+  color:rgb(116, 221, 221);
+  cursor: pointer;
+}
+
+#intro {
+  min-height: 600px;
+  display: flex;
+  position: relative;
+}
+
+.jumbotron {
+  text-align: center;
+  background: none;
+  margin: auto;
+  text-align: center;
+}
+
+#aboutNav {
+  font-weight: normal;
+}
+
+/* gradient */
+.gradient {
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* slightly round edges for containers */
+.containerStyle {
+  border-radius: 15px;
+  display: flex;
+}
+#aboutText {
+  font-family: "Catamaran", sans-serif;
+}
+
+.aboutLink {
+  margin: auto;
+  text-align: center;
+}
+
+.iconLink {
+  color: white;
+}
+
+#firstImgContainer {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  font-weight: bold;
+}
+
+.imgContainer {
+  display: flex;
+  position: relative;
+}
+
+img {
+  margin: 15px;
+  height: 10vw;
+}
+
+/* text appears when hovering over imgs in skills */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1;
+}
+
+.imgText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  float: left;
+}
+
+/* ----------------------------- */
+
+#lastImg {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#contactContainer {
+  border-radius: 15px;
+}
+
+/* special effect when hovering over send button in contact form */
+
+#hover:hover {
+  color: white;
+}
+
+#hover:active {
+  background-color: #d4af37;
+  -webkit-box-shadow: 0 5px #666;
+  box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+
+#hover span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#hover span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#hover:hover span {
+  padding-right: 25px;
+}
+
+#hover:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ----------------------------- */
+
+#footerContainer {
+  text-align: center;
+}
