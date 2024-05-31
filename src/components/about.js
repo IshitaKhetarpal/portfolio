@@ -1,6 +1,6 @@
 import React from "react";
 
-import resume from "../resume.pdf";
+import resume2 from "../resume2.pdf";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,7 +35,7 @@ function About() {
                 type='button'
                 class='btn btn-primary px-5 py-2 m-3 font-weight-bold'
               >
-                <a href={resume} class='iconLink' download='IshitaKhetarpal-Resume'>
+                <a href={resume2} class='iconLink' download='IshitaKhetarpal-Resume'>
                   <FontAwesomeIcon icon={faFile} /> Resume
                 </a>
               </button>
