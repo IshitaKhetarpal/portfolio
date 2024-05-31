@@ -3,6 +3,7 @@ import Card from './Card';
 import pun from '../imgs/pun.jpg';
 import smile from '../imgs/smile.png';
 import food from '../imgs/food.png';
+import chat from '../imgs/chat.png';
 import firewall from '../imgs/firewall.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -15,8 +16,16 @@ class Carousel extends React.Component {
       super(props);
       this.state = {
           items: [
+            {
+                id: 0,
+                title: 'Real Time Chat App',
+                subTitle: 'Real-time chat application tailored for teams gaming  bot which helps you decide what you want to eat!',
+                imgSrc: chat,
+                link: 'https://chat-app-fccc9.web.app/register',
+                selected: false
+            },
               {
-                  id: 0,
+                  id: 1,
                   title: 'Food Decider Bot',
                   subTitle: 'Chat bot which helps you decide what you want to eat!',
                   imgSrc: food,
@@ -24,7 +33,7 @@ class Carousel extends React.Component {
                   selected: false
               },
               {
-                  id: 1,
+                  id: 2,
                   title: 'Fun Pun Game',
                   subTitle: 'Fun Game for Google Assistant',
                   imgSrc: pun,
@@ -32,7 +41,7 @@ class Carousel extends React.Component {
                   selected: false
               },
               {
-                  id: 2,
+                  id: 3,
                   title: 'Colorful Smile',
                   subTitle: 'ML model built using python that detects your smile in real time and displays your name',
                   imgSrc: smile,
@@ -40,7 +49,7 @@ class Carousel extends React.Component {
                   selected: false
               },
               {
-                    id: 3,
+                    id: 4,
                     title: 'Network Firewall Simulation',
                     subTitle: 'Visualization project',
                     imgSrc: firewall,
